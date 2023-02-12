@@ -1,0 +1,12 @@
+#! /usr/bin/env perl
+
+use v5.37.9;
+use lib '/home/regular/IdeaProjects/NetworkManager-Strict/lib';
+
+use NetworkManager::Strict;
+
+my $n = NetworkManager::Strict -> new;
+
+say $n -> path;
+say $n -> set_dns;
+say $n -> lock;
