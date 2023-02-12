@@ -1,4 +1,9 @@
 Revision history for NetworkManager-Strict
 
 {{$NEXT}}
-    -
+    - Add NetworkManager::Strict class
+    - Add lock method using chmod
+    - Add set_dns method using nmcli
+    - Add network_manager script
+    - Add OpenDNS Family Shield DNS provider
+    - Add CloudFlare 1.1.1.1 for Families DNS provider

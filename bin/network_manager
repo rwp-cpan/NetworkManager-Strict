@@ -1,5 +1,8 @@
 #! /usr/bin/env perl
 
+# PODNAME: network_manager
+# ABSTRACT: NetworkManager tightening script
+
 use v5.37.9;
 use lib '/home/regular/IdeaProjects/NetworkManager-Strict/lib';
 
