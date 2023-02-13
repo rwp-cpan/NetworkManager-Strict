@@ -1,6 +1,8 @@
 Revision history for NetworkManager-Strict
 
 {{$NEXT}}
+
+0.230430  2023-02-12 17:55:23+04:00 Asia/Baku (TRIAL RELEASE)
     - Add NetworkManager::Strict class
     - Add lock method using chmod
     - Add set_dns method using nmcli

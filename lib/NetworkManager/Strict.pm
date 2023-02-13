@@ -22,11 +22,11 @@ class NetworkManager::Strict {
 
 =head3 OpenDNS
 
-https://www.opendns.com/setupguide/#familyshield
+L<opendns.com/setupguide/#familyshield|https://www.opendns.com/setupguide/#familyshield>
 
 =head3 CloudFlare
 
-https://blog.cloudflare.com/introducing-1-1-1-1-for-families/
+L<blog.cloudflare.com/introducing-1-1-1-1-for-families|https://blog.cloudflare.com/introducing-1-1-1-1-for-families/>
 
 =cut
 
