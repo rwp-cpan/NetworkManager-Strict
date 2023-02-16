@@ -5,11 +5,26 @@
 
 use v5.37.9;
 use lib '/home/regular/IdeaProjects/NetworkManager-Strict/lib';
+use English;
+use Term::ANSIColor;
 
 use NetworkManager::Strict;
 
+BEGIN {
+  if ( $UID != 0 ) {
+    die colored my $message = <<~ "EXCEPTION" , 'red';
+    Please execute the program as the root user (for /etc/NetworkManager access).
+
+    sudo /home/regular/perl5/perlbrew/perls/blead/bin/perl \\
+      -I /home/regular/perl5/perlbrew/perls/blead/bin/perl \\
+      $PROGRAM_NAME ,
+    EXCEPTION
+  }
+}
+
 my $n = NetworkManager::Strict -> new;
 
-say $n -> path;
+# say $n -> path;
 say $n -> set_dns;
 say $n -> lock;
+say colored [ qw( bright_green bold ) ] , 'DNS set, interfaces locked';
