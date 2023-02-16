@@ -1,8 +1,10 @@
+# PODNAME: General.pm
 # ABSTRACT: NetworkManager properties general class
 
 use v5.37.9;
 use experimental qw( class builtin try );
 
+package NetworkManager::General;
 class NetworkManager::General {
 
   use Path::Tiny qw();
