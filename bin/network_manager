@@ -3,6 +3,18 @@
 # PODNAME: network_manager
 # ABSTRACT: NetworkManager tightening script
 
+=head1 SYNOPSIS
+
+  sudo ./network_manager # file's executable, Perl >= 5.37.9
+
+  sudo perl network_manager # Perl >= 5.37.9
+
+  sudo ~/perl5/perlbrew/perls/blead/bin/perl \\
+    -I ~/perl5/perlbrew/perls/blead/lib \\
+    network_manager # using perlbrew with a perl aliased as "blead"
+
+=cut
+
 use v5.37.9;
 use lib '/home/regular/IdeaProjects/NetworkManager-Strict/lib';
 use English;
@@ -15,8 +27,8 @@ BEGIN {
     die colored my $message = <<~ "EXCEPTION" , 'red';
     Please execute the program as the root user (for /etc/NetworkManager access).
 
-    sudo /home/regular/perl5/perlbrew/perls/blead/bin/perl \\
-      -I /home/regular/perl5/perlbrew/perls/blead/bin/perl \\
+    sudo ~/perl5/perlbrew/perls/blead/bin/perl \\
+      -I ~/perl5/perlbrew/perls/blead/lib \\
       $PROGRAM_NAME ,
     EXCEPTION
   }

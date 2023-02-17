@@ -1,6 +1,11 @@
 Revision history for NetworkManager-Strict
 
 {{$NEXT}}
+  - Add synopsis to network_manager script
+  - Update the path in the script to be general referring to ~
+  - Add weaver.ini to the git repository
+
+0.230470  2023-02-16 22:56:53+04:00 Asia/Baku
   - Document methods and attributes
   - Separate the NetworkManager::Strict::General class into a file
   - Add colors
